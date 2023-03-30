@@ -6,7 +6,7 @@ permissions:
   packages: write # This is required to push to GitHub registry
 jobs:
   build_with_docker:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: Build with Docker
     env:
       IMAGE_NAME: docker-django-example
