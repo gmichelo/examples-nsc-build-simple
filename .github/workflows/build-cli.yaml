@@ -28,7 +28,7 @@ jobs:
           docker push $IMAGE_REPO/$IMAGE_NAME:$VERSION
 
   build_with_nscloud:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: Build with Namespace Cloud
     env:
       IMAGE_NAME: nsc-django-example
