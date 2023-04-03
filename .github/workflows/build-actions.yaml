@@ -2,6 +2,7 @@ name: build-with-actions
 on: [push, workflow_dispatch]
 concurrency: staging_environment
 
+
 permissions:
   id-token: write # This is required for requesting the JWT
   packages: write # This is required to push to GitHub registry
